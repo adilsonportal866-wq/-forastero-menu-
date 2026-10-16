@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - El Forastero</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #ff9800;
+        }
+        .menu-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+        }
+        .item:last-child {
+            border-bottom: none;
+        }
+        .name {
+            font-weight: bold;
+        }
+        .price {
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <h1>El Forastero - Menú</h1>
+        <p>¡Disfruta de nuestros mejores platos!</p>
+        
+        <div class="item">
+            <span class="name">Hamburguesa Clásica</span>
+            <span class="price">$5.00</span>
+        </div>
+        <div class="item">
+            <span class="name">Hamburguesa Doble con Queso</span>
+            <span class="price">$7.00</span>
+        </div>
+        <div class="item">
+            <span class="name">Papas Fritas Grandes</span>
+            <span class="price">$3.00</span>
+        </div>
+        <div class="item">
+            <span class="name">Coca-Cola 500ml</span>
+            <span class="price">$1.50</span>
+        </div>
+    </div>
+
+</body>
+</html>
