@@ -1,0 +1,181 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forastero - El sabor nace en la brasa</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --accent-color: #d4a373;
+            --text-color: #ffffff;
+            --text-muted: #b0b0b0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: linear-gradient(to bottom, #1a1a1a, #121212);
+            border-bottom: 2px solid var(--accent-color);
+        }
+        header h1 {
+            margin: 0;
+            color: var(--accent-color);
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        h2.category-title {
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        .menu-item {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .item-info {
+            flex: 1;
+            padding-right: 1rem;
+        }
+        .item-info h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+            color: var(--text-color);
+        }
+        .item-info p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.4; /* Mejora el espacio entre las líneas de la lista */
+        }
+        .item-price {
+            font-weight: bold;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            white-space: nowrap;
+        }
+        .item-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 6px;
+            object-fit: cover; 
+            object-position: center;
+            margin-left: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FORASTERO</h1>
+        <p>El sabor nace en la brasa</p>
+    </header>
+
+    <div class="container">
+        <!-- Secção de Combos -->
+        <section>
+            <h2 class="category-title">Combos</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Combo para Compartir</h3>
+                    <!-- Aquí añadimos las estrellitas en forma de lista -->
+                    <p>
+                        ★ 2 Hamburguesas doble carne<br>
+                        ★ 1 Porción de papas fritas<br>
+                        ★ 1 Coca-Cola personal
+                    </p>
+                </div>
+                <div class="item-price">Gs. 60.000</div>
+                <img class="item-image" src="image_4.png" alt="Combo para Compartir">
+            </div>
+        </section>
+
+        <!-- Secção de Hambúrgueres / Especiais -->
+        <section>
+            <h2 class="category-title">Hamburguesas y Lomitos</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>La Montada</h3>
+                    <p>Doble carne, abundante cheddar fundido y crujientes trozos de bacon.</p>
+                </div>
+                <div class="item-price">Gs. 45.000</div>
+                <img class="item-image" src="image.png" alt="La Montada">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Sándwich de Lomito Forastero</h3>
+                    <p>Pan francés artesanal, mayo de la casa, 180 gr de lomito, cebolla caramelizada, huevo frito, muzzarella, lechuga, tomate y toque de salsa barbacoa.</p>
+                </div>
+                <div class="item-price">Gs. 50.000</div>
+                <img class="item-image" src="sua_imagem_lomito.jpg" alt="Sándwich de Lomito Forastero">
+            </div>
+        </section>
+
+        <!-- Secção de Bebidas -->
+        <section>
+            <h2 class="category-title">Bebidas</h2>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Coca Personal (Lata)</h3>
+                    <p>Refresco en lata de 350ml.</p>
+                </div>
+                <div class="item-price">Gs. 10.000</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3>Coca-Cola (1,5 Litros)</h3>
+                    <p>Refresco familiar.</p>
+                </div>
+                <div class="item-price">Gs. 18.000</div>
+                <img class="item-image" src="sua_imagem_coca_1L.jpg" alt="Coca-Cola 1.5L">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Forastero. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
